@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.App {
+    color: black;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(39, 60, 92);
+    padding: 20px;
+}
+
+main {
+    width: 540px;
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 31px;
+    padding-left: 8px;
+    position: absolute;
+    top: -30px;
+}
+
+.themeHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 28px;
+    text-transform: uppercase;
+}
+
+.store {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    text-align: right;
+    color: #fff;
+    border: 1px solid rgba(219, 27, 27, 0.992);
+    border-radius: 10px;
+    background: rgb(34, 29, 51);
+    outline: none;
+}
+
+.store::placeholder {
+    color: #fff;
+}
+
+.calculator {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(14, 14, 14);
+    background: #151d34;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.button,
+.operator,
+.del {
+    flex: 1;
+    min-width: 0;
+    height: 65px;
+    margin: 10px;
+    color: #151d34;
+    background: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border: solid 1px rgb(44, 12, 66);
+    border-radius: 10px;
+    box-shadow: -1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.del {
+    color: #fff;
+    background: #415971;
+}
+
+.operator {
+    color: #151d34;
+}
+
+.equal,
+.reset {
+    flex: 1;
+    min-width: 0;
+    height: 65px;
+    margin: 10px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: solid 1px rgb(44, 12, 66);
+    border-radius: 10px;
+    box-shadow: -1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.equal {
+    color: #fff;
+    background: #f24d1f;
+}
+
+.reset {
+    color: #fff;
+    background: #415971;
+}
+
+.button:hover,
+.operator:hover,
+.reset:hover,
+.del:hover,
+.equal:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+input[type="button"]:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+
+    .calculator {
+        padding: 10px;
+    }
+
+    .button,
+    .operator,
+    .del,
+    .equal,
+    .reset {
+        height: 58px;
+        margin: 6px;
+        font-size: 20px;
+    }
+
+    .store {
+        font-size: 38px;
+    }
+}

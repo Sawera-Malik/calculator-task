@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="App">
+        <div class="calc">
+            <main>
+
+                <section class="logo">
+                    <div>
+                        <h1>calc</h1>
+                    </div>
+                    <div class="themeHeader"></div>
+                </section>
+
+                <input
+                    type="text"
+                    class="store"
+                    placeholder="0"
+                    id="input"
+                    readonly
+                >
+
+                <div class="calculator">
+
+                    <div class="button-row">
+                        <input type="button" value="7" class="button">
+                        <input type="button" value="8" class="button">
+                        <input type="button" value="9" class="button">
+                        <input type="button" value="DEL" class="del">
+                    </div>
+
+                    <div class="button-row">
+                        <input type="button" value="4" class="button">
+                        <input type="button" value="5" class="button">
+                        <input type="button" value="6" class="button">
+                        <input type="button" value="+" class="button">
+                    </div>
+
+                    <div class="button-row">
+                        <input type="button" value="1" class="button">
+                        <input type="button" value="2" class="button">
+                        <input type="button" value="3" class="button">
+                        <input type="button" value="-" class="button">
+                    </div>
+
+                    <div class="button-row">
+                        <input type="button" value="." class="button">
+                        <input type="button" value="0" class="button">
+                        <input type="button" value="/" class="operator">
+                        <input type="button" value="*" class="button">
+                    </div>
+
+                    <div class="button-row">
+                        <input type="button" value="Reset" class="reset">
+                        <input type="button" value="=" class="equal">
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
